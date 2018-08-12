@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GeekBrains7DZ"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="200" Width="300">
     <Grid>
-        
+        <StackPanel Orientation="Vertical">
+            <Button Content="Играть" Click="NewGame" Name="NG"/>
+            <StackPanel Orientation="Horizontal">
+            <Label Content="Требуемый результат:"/>
+            <Label Content="0" Name="LabelWinResult"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Right" Width="100" ButtonBase.Click="Write_Ticket">
+                <Button Content="+1" HorizontalAlignment="Left"  Width="75" Click="Button_Click"  Name="btn1"/>
+                <Button Content="*2" HorizontalAlignment="Left"   Width="75" Click="Button_Clickx2" Name="btn2"/>
+                <Button Content="Отмена" Click="Button_reset" Width="75" HorizontalAlignment="Left" Name="btnreset" />
+                <Button Content="Сброс" HorizontalAlignment="Left"  Width="75" Click="Button_Clickreset" Name="btn3"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                <Label Content="Текущий результат:" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Name="LabelResult"/>
+                <Label Content="Количество ходов:" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Name="ticketCounter"/>
+            </StackPanel>
+        </StackPanel>
+
+
     </Grid>
 </Window>
