@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Task2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Game" Height="200" Width="200">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Компьютер загадывает число от 1 до 100, а человек пытается его угадать за минимальное число попыток." VerticalAlignment="Top" Name="Podskazka"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,113,0,0" MaxLength="2"  ToolTip="Вводи число сюда" VerticalAlignment="Top" Width="172" Name="TextRead"/>
+        <Button Content="Пробуем" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Content="Попыток:" HorizontalAlignment="Left" Margin="90,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.289,1.103" Height="21" FontSize="10"/>
+        <Label Content="0" HorizontalAlignment="Left" Margin="137,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.289,1.103" Height="21" FontSize="10" Name="Counter"/>
+
+
     </Grid>
 </Window>
